@@ -2,16 +2,20 @@
 USE ETL_db;
 
 -- Create Two Tables
-DROP TABLE avocado;
+
 CREATE TABLE avocado (
   id INT PRIMARY KEY AUTO_INCREMENT,
   region VARCHAR(50),
-  average_price INT,
-  total_volume INT);
+  average_price FLOAT,
+  total_volume INT(125));
 
-DROP TABLE census;
+
 CREATE TABLE census (
   id  INT PRIMARY KEY AUTO_INCREMENT,
   region VARCHAR(50),
   city_median_income INT,
   city_median_age INT);
+
+SELECT * FROM avocado;
+
+SELECT * FROM census;

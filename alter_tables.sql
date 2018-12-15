@@ -1,0 +1,17 @@
+ALTER TABLE census
+MODIFY COLUMN city_median_income BIGINT;
+
+ALTER TABLE avocado
+MODIFY COLUMN total_volume VARCHAR(125);
+
+ALTER TABLE census
+MODIFY COLUMN region VARCHAR(125);
+
+ALTER TABLE avocado
+MODIFY COLUMN average_price FLOAT;
+
+ALTER TABLE avocado
+MODIFY COLUMN average_price DECIMAL;
+
+ALTER TABLE avocado
+MODIFY COLUMN average_price DOUBLE;
